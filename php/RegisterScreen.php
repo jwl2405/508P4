@@ -6,7 +6,6 @@
         <title>
             Create an account
         </title>
-            <?php require_once('header.php'); ?>
             <meta charset="UTF-8">
             
             <style>
