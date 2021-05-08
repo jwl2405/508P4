@@ -202,7 +202,6 @@
             <div class="login" id="logger">
                 <input type="text" placeholder="Username" name="userid"><br>
                 <input type="text" placeholder="Email Address" name="userid"><br>
-                <input type="password" placeholder="Password again" name="pswrd"><br>
                 <input type="password" placeholder="Password" name="pswrd"><br>
                 <input type="button" onclick="check(this.form)" value="Login" />
             </div>
