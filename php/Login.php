@@ -1,11 +1,6 @@
 <html>
-<head>
-<title>HR database</title>
-</head>
 
-<?php require_once('connection.php'); ?>
-
-<html>
+    <?php require_once('connection.php'); ?>
 
 <head>
 
@@ -169,7 +164,6 @@
             color: rgba(255, 255, 255, 0.6);
         }
     </style>
-
 </head>
 
 <body style="background-color: black;">
@@ -179,8 +173,12 @@
         <a href="508LogIn.html">Log In</a>
     </div>
 
-    <div class="body"></div>
-    <div class="grad"></div>
+    <div class="body">
+        
+    </div>
+    <div class="grad">
+
+    </div>
     <div class="header">
         <div><span>Gymmer</span></div>
     </div>
@@ -192,14 +190,10 @@
             <input type="button" onclick="check(this.form)" value="Login" />
         </div>
 
-
-
     </form>
 </body>
 
 <body oncontextmenu="return false">
-
-
 </body>
-
+        
 </html>
