@@ -191,6 +191,16 @@
         </div>
 
     </form>
+    <script language="javascript">
+    function check(form){
+        if(form.userid.value == "lijw" && form.pswrd.value == "Cannons032199"){
+
+            window.locate.href = "AccountView.php";
+        }else{
+            alert("Please subscribe to my channel for more coding!")
+        }
+    }
+</script>
 </body>
 
 <body 
