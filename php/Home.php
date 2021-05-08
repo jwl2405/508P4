@@ -137,7 +137,7 @@
         </h3>
 
         <p style="text-align:center;">
-            <a href="contact">Ask here!</a>
+            <a href="AskAway">Ask here!</a>
 
         </p>
     </fieldset>
@@ -196,7 +196,7 @@
 
     <!--Used for contacting us-->
     <fieldset id="helper" style="background-color: #333;">
-        <div class="contact">
+        <div class="contact" id="AskAway">
 
             <h2 style="color: #f2f2f2;">
                 Let's talk about Gymmer

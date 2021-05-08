@@ -18,6 +18,14 @@ try {
     echo "Connection failed: " . $e->getMessage();
 }
 
+$sql = "INSERT INTO Students (name, lastname, email) VALUES ('Test', 'Testing', 'Testing@tesing.com')";
+
+if (mysqli_query($conn, $sql)) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+
 // Start or resume session variables
 session_start();
 
@@ -56,5 +64,15 @@ if (!isset($_SESSION['user_ID']))
         exit();
     }
 }
+
 */
+
+
+
 ?>
+
+<html>
+
+    INSERT INTO mp_pages (page_id, page_title, page_desc, meta_keywords, meta_desc, sort_order, parent, status, page_alias) VALUES
+
+</html>
