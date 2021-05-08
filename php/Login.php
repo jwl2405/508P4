@@ -198,39 +198,3 @@
 </body>
         
 </html>
-
-<?php
-
-if (!isset($_SESSION['user_ID']))
-{
-    // If the page is receiving the email and password from the login form then verify the login data
-    if (isset($_POST['email']) && isset($_POST['password']))
-    {
-        $stmt = $conn->prepare("SELECT ID, password FROM user WHERE email=:email");
-        $stmt->bindValue(':email', $_POST['email']);
-        $stmt->execute();
-        
-        $queryResult = $stmt->fetch();
-        
-        // Verify password submitted by the user with the hash stored in the database
-        if(!empty($queryResult) && password_verify($_POST["password"], $queryResult['password']))
-        {
-            // Create session variable
-            $_SESSION['user_ID'] = $queryResult['ID'];
-            
-            // Redirect to URL 
-            header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
-        } else {
-            // Password mismatch
-            require('Home.php');
-            exit();
-        }
-    }
-    else
-    {
-        // Show login page
-        require('Home.php');
-        exit();
-    }
-}
-?>
