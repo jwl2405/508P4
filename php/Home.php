@@ -184,7 +184,7 @@
         </h3>
 
         <p style="text-align:center;">
-            <a href="508RegisterScreen.html">Register Now!</a>
+            <a href="RegisterScreen.php">Register Now!</a>
         </p>
     </fieldset>
 

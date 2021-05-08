@@ -1,6 +1,6 @@
 <html>
-
     <?php require_once('connection.php'); ?>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
 
@@ -166,7 +166,7 @@
     </style>
 </head>
 
-<body>
+<body style="background-color: black;">
     <div class="topnav">
         <a class="active" href="Home.php">Home</a>
         <a href="AboutUs.php">About Us</a>
@@ -200,7 +200,7 @@
             alert("Please subscribe to my channel for more coding!")
         }
     }
-</script>
+    </script>
 </body>
 
 <body 
