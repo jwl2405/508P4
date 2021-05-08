@@ -173,6 +173,7 @@
 
     <?php require_once('connection.php'); ?>
 
+    <body style ="background-color: black;"> 
     <div class="topnav">
         <a class="active" href="Home.php">Home</a>
         <a href="AboutUs.php">About Us</a>
