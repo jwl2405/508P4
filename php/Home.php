@@ -109,7 +109,7 @@
 
     <div class="topnav">
         <a class="active" href="Home.php">Home</a>
-        <a href="508AboutUs.html">About Us</a>
+        <a href="AboutUs.php">About Us</a>
         <a href="login.php">Log In</a>
     </div>
 
