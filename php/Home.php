@@ -108,9 +108,9 @@
 <body>
 
     <div class="topnav">
-        <a class="active" href="508Home.html">Home</a>
+        <a class="active" href="Home.php">Home</a>
         <a href="508AboutUs.html">About Us</a>
-        <a href="508LogIn.html">Log In</a>
+        <a href="login.php">Log In</a>
     </div>
 
     <!--Title and description of website-->

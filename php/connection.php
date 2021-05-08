@@ -23,6 +23,8 @@ session_start();
 
 // If the user_ID session is not set, then the user has not logged in yet
 
+require('Home.php');
+/*
 if (!isset($_SESSION['user_ID']))
 {
     // If the page is receiving the email and password from the login form then verify the login data
@@ -44,17 +46,17 @@ if (!isset($_SESSION['user_ID']))
             header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
         } else {
             // Password mismatch
-            require('login.php');
+            require('Home.php');
             exit();
         }
     }
     else
     {
         // Show login page
-        require('Login.php');
+        require('Home.php');
         exit();
     }
 }
 
-
+*/
 ?>
