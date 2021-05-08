@@ -1,4 +1,6 @@
 <html>
+<?php require_once('connection.php'); ?>
+<meta name="viewport" content="width=device-width, initial-scale=1">
     <head>
     
         <title>
@@ -207,5 +209,9 @@
 
         </form>
     </body>
+
+    <body 
+    oncontextmenu="return false">
+</body>
 
 </html>
