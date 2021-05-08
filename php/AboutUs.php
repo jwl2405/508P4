@@ -1,9 +1,9 @@
 <html>
     <head>  
     <title style="font-family: 'Times New Roman', Times, serif;">
-        Gymmer
+        About Gymmer
     </title>
-    
+
     <style>
         #header1 {
             text-align: center
@@ -53,7 +53,7 @@
     <div class="topnav">
         <a class="active" href="Home.php">Home</a>
         <a href="AboutUs.php">About Us</a>
-        <a href="login.php">Log In</a>
+        <a href="Login.php">Log In</a>
     </div>
 
     <h1 id="header1">

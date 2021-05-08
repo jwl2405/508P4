@@ -2,7 +2,7 @@
     <head>
     
         <title>
-            Login
+            Create an account
         </title>
             <?php require_once('header.php'); ?>
             <meta charset="UTF-8">
@@ -172,12 +172,11 @@
 
     <?php require_once('connection.php'); ?>
 
-    <body style="background-color: black;">
-        <div class="topnav">
-            <a class="active" href="508Home.html">Home</a>
-            <a href="508AboutUs.html">About Us</a>
-            <a href="508LogIn.html">Log In</a>
-        </div>
+    <div class="topnav">
+        <a class="active" href="Home.php">Home</a>
+        <a href="AboutUs.php">About Us</a>
+        <a href="Login.php">Log In</a>
+    </div>
 
         <h1 id="header" style="color: white;">
             Create an account
