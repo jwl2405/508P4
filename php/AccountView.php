@@ -8,7 +8,14 @@
     </title>
     
     <style>
+        input {
+            margin: 5px;
+        }
 
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
         .topnav {
             overflow: hidden;
             background-color: #333;
