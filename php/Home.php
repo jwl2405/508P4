@@ -137,7 +137,7 @@
         </h3>
 
         <p style="text-align:center;">
-            <a href="AskAway">Ask here!</a>
+            <a href="#AskAway">Ask here!</a>
 
         </p>
     </fieldset>
