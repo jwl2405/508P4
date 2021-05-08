@@ -3,7 +3,7 @@
     <title style="font-family: 'Times New Roman', Times, serif;">
         Gymmer
     </title>
-        <?php require_once('header.php'); ?>
+    
     <style>
         #header1 {
             text-align: center
