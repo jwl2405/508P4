@@ -72,9 +72,3 @@ if (!isset($_SESSION['user_ID']))
 
 
 ?>
-
-<html>
-
-    INSERT INTO mp_pages (page_id, page_title, page_desc, meta_keywords, meta_desc, sort_order, parent, status, page_alias) VALUES
-
-</html>
