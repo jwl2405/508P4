@@ -183,24 +183,16 @@
         <div><span>Gymmer</span></div>
     </div>
     <br>
+
     <form method="POST" name="login">
         <div class="login">
-            <input type="email" placeholder="Username" name="userid"><br>
-            <input type="password" placeholder="Password" name="pswrd"><br>
+            <input id="email" type="email" placeholder="Username" name="email"><br>
+            <input id="password" type="password" placeholder="Password" name="password"><br>
             <button type="submit"> Login</button>
         </div>
 
     </form>
-    <script language="javascript">
-    function check(form){
-        if(form.userid.value == "lijw" && form.pswrd.value == "Cannons032199"){
-
-            window.locate.href = "AccountView.php";
-        }else{
-            alert("Please subscribe to my channel for more coding!")
-        }
-    }
-    </script>
+    
 </body>
 
 <body 
