@@ -166,7 +166,7 @@
     </style>
 </head>
 
-<body style="background-color: black;">
+<body style="background-color: white;">
     <div class="topnav">
         <a class="active" href="Home.php">Home</a>
         <a href="AboutUs.php">About Us</a>
