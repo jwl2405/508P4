@@ -186,8 +186,10 @@
 
     <form method="post" name="login">
         <div class="login">
-            <input id="email" type="email" placeholder="Username" name="email"><br>
-            <input id="password" type="password" placeholder="Password" name="password"><br>
+            <input id="email" type="email" placeholder="Username" name="email">
+            <br>
+            <input id="password" type="password" placeholder="Password" name="password">
+            <br>
             <button type="submit"> Login</button>
         </div>
 
