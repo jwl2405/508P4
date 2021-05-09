@@ -31,7 +31,43 @@ if (mysqli_query($conn, $sql)) {
 // Start or resume session variables
 session_start();
 
+if (isset($_POST['RegisterScreen'])) {
+    $username = $_POST['userid'];
+    $email = $_POST['emailid'];
 
+    $sql_u = "SELECT * FROM users WHERE username='$userid'";
+  	$sql_e = "SELECT * FROM users WHERE email='$emailid'";
+  	$res_u = mysqli_query($conn, $sql_u);
+  	$res_e = mysqli_query($conn, $sql_e);
+      if (mysqli_num_rows($res_u) < 0) {
+        $query = "INSERT INTO users (username, email, password) 
+      	    	  VALUES ('$username', '$email', '".md5($password)."')";
+           $results = mysqli_query($db, $query);
+           echo 'Saved!';
+           exit();
+      }else
+      echo 'An account is already associated with the credentials you have provided';
+    }
+
+    if(isset($_POST['Login'])){
+        $email = $_POST['emailid'];
+        $password = $_POST['password'];
+
+        $result1 = mysql_query("SELECT username, password FROM Users WHERE username = '".$name."' AND  password = '".$password."'");
+
+        if(mysql_num_rows($result1) > 0 )
+        { 
+            $_SESSION["logged_in"] = true; 
+            $_SESSION["naam"] = $name; 
+        }
+        else
+        {
+            echo 'The username or password are incorrect!';
+        }
+
+    }
+
+    
 // If the user_ID session is not set, then the user has not logged in yet
 
 /*
