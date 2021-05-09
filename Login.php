@@ -167,10 +167,13 @@
 </head>
 
 <body style="background-color: white;">
-    <div class="topnav">
-        <a class="active" href="Home.php">Home</a>
-        <a href="AboutUs.php">About Us</a>
-        <a href="Login.php">Log In</a>
+<div class="topnav">    
+        <a class="active" href="AccountView.php">Account View</a>
+        <a href="Members.php">Members</a>
+        <a href="Employees.php">Employees</a>
+        <button type="submit" id="SignOut"> Sign out </button>  
+
+
     </div>
 
     <div class="body">
