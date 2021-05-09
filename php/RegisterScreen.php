@@ -171,7 +171,6 @@
         </style>
     </head>
 
-    <?php require_once('connection.php'); ?>
 
     <body style ="background-color: black;"> 
     <div class="topnav">
@@ -197,7 +196,7 @@
         </div>
         <br>
 
-        <form  method="POST" name="login">
+        <form  method="POST" action="add1.php" name="login">
 
             <div class="login" id="logger">
                 <input type="text" placeholder="Username" name="username" id="username"><br>
@@ -208,7 +207,7 @@
 
         </form>
 
-        <table style="width:100%">
+        <!-- <table style="width:100%">
         <tr>
             <th>Firstname</th>
             <th>Lastname</th>
@@ -216,7 +215,7 @@
             <th>Customer_ID</th>
 
         </tr>
-        </table>
+        </table> -->
 
     </body>
 
