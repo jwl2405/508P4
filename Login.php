@@ -197,9 +197,4 @@
     </form>
     
 </body>
-
-<body 
-    oncontextmenu="return false">
-</body>
-        
 </html>
