@@ -51,7 +51,7 @@
       
       <TABLE BORDER="5"    WIDTH="50%"   CELLPADDING="4" CELLSPACING="3">
    <TR>
-      <TH COLSPAN="2"><BR><H3><BR>Members</H3>
+      <TH COLSPAN="6"><BR><H3><BR>Members</H3>
 
       </TH>
    </TR>
@@ -64,8 +64,12 @@
       <TH>Password</TH>
    </TR>
    <TR ALIGN="CENTER">
-      <TD>Data 1</TD>
+       <TD>Data 1</TD>
       <TD>Data 2</TD>
+      <TD>Data 3</TD>
+      <TD>Data 4</TD>
+      <TD>Data 5</TD>
+      <TD>Data 6</TD>
    </TR>
 </TABLE>
 
