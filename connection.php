@@ -41,7 +41,7 @@ if (isset($_SESSION['user_ID']))
             $_SESSION['user_ID'] = $queryResult['ID'];
             
             echo "Working";
-            header("Location: Home.php");
+            header("Location: AccountView.php");
         } else {
             // Password mismatch
             echo "NotWorking";
