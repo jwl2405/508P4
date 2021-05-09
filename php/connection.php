@@ -44,10 +44,10 @@ if (!isset($_SESSION['user_ID']))
         $stmt->execute();
         
         $queryResult = $stmt->fetch();
-        //$pwd_plain = htmlspecialchars($POST["password"]);
+        $pwd_plain = htmlspecialchars($POST["password"]);
         // Verify password submitted by the user with the hash stored in the database
 
-        if(!empty($queryResult) && $_POST["password"] == $queryResult['password']))
+        if(!empty($queryResult) && password_verify($_POST["password"], $queryResult['password']))
         {
             // Create session variable
             $_SESSION['user_ID'] = $queryResult['ID'];
