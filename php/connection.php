@@ -95,6 +95,7 @@ if (!isset($_SESSION['user_ID']))
             header("Location: Home.php");
         } else {
             // Password mismatch
+            echo "NotWorking";
             require('Login.php');
             exit();
         }
