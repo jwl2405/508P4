@@ -77,7 +77,7 @@
 <br>
 <fieldset>
     <legend>
-    Add Members
+    Add Employees
     </legend>
 
     <label>
