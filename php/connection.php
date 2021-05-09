@@ -57,14 +57,14 @@ if (!isset($_SESSION['user_ID']))
             header("Location: php/AccountView.php");
         } else {
             // Password mismatch
-            require('Home.php');
+            require('Login.php');
             exit();
         }
     }
     else
     {
         // Show login page
-        require('Home.php');
+        require('Login.php');
         exit();
     }
 }
