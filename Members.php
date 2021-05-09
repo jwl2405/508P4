@@ -51,29 +51,24 @@
 
     </div>
       
-      <TABLE BORDER="5"    WIDTH="50%"   CELLPADDING="4" CELLSPACING="3">
-   <TR>
-      <TH COLSPAN="6"><BR><H3><BR>Employees</H3>
+    <div class="container-fluid mt-3 mb-3">
+	<h4>Restaurants</h4>
+	<div class="table-responsive">
+		<table id="table-rest" name="table-rest" class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Type</th>
+					<th>Location</th>
+					<th>Phone Number</th>
+					<th>Rating</th>
+                    <th>Posted By</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+</div>
 
-      </TH>
-   </TR>
-   <TR>
-   <TH>First Name</TH>
-      <TH>Last Name</TH>
-      <TH>Username</TH>
-      <TH>Email Address</TH>
-      <TH>ID</TH>
-      <TH>Password</TH>
-   </TR>
-   <TR ALIGN="CENTER">
-       <TD>Data 1</TD>
-      <TD>Data 2</TD>
-      <TD>Data 3</TD>
-      <TD>Data 4</TD>
-      <TD>Data 5</TD>
-      <TD>Data 6</TD>
-   </TR>
-</TABLE>
 
 <fieldset>
     <legend>
