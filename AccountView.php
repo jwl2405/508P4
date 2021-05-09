@@ -1,5 +1,7 @@
 <html>
-<?php require_once('connection.php'); ?>
+<?php require_once('connection.php'); if (isset($_SESSION['user_ID'])){
+    echo "<h1>working</h1>"
+}?>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
