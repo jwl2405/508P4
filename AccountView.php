@@ -43,9 +43,11 @@
 
 <body>
 
-    <?php
-        echo isset($_SESSION['user_ID']);
-    ?>
+        <?php
+        if (isset($_SESSION['user_ID'])){
+            echo "<h1>working</h1>"
+        }
+        ?>
 
     <div class="topnav">    
         <a class="active" href="AccountView.php">Account View</a>
