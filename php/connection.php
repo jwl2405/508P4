@@ -19,13 +19,9 @@ try {
 }
 
 session_start();
-echo "Yes";
-echo $_SESSION['user_ID'];
 
 if (isset($_SESSION['user_ID']))
 {
-
-    echo "Yes12";
 
     // If the page is receiving the email and password from the login form then verify the login data
     if (!isset($_POST['email']) && isset($_POST['password']))
@@ -44,8 +40,6 @@ if (isset($_SESSION['user_ID']))
             // Create session variable
             $_SESSION['user_ID'] = $queryResult['ID'];
             
-            // Redirect to URL 
-            //header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
             echo "Working";
             header("Location: Home.php");
         } else {
