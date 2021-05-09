@@ -43,7 +43,7 @@
 
 <body>
 
-    <div class="topnav">    
+    <div class="topnav">
         <a class="active" href="AccountView.php">Account View</a>
         <a href="Members.php">Members</a>
         <a href="Employees.php">Employees</a>
@@ -51,11 +51,13 @@
       
       <TABLE BORDER="5"    WIDTH="50%"   CELLPADDING="4" CELLSPACING="3">
    <TR>
-      <TH COLSPAN="4"><BR><H3><BR>Account Information</H3>
+      <TH COLSPAN="6"><BR><H3><BR>Members</H3>
 
       </TH>
    </TR>
    <TR>
+   <TH>First Name</TH>
+      <TH>Last Name</TH>
       <TH>Username</TH>
       <TH>Email Address</TH>
       <TH>ID</TH>
@@ -66,6 +68,8 @@
       <TD>Data 2</TD>
       <TD>Data 3</TD>
       <TD>Data 4</TD>
+      <TD>Data 5</TD>
+      <TD>Data 6</TD>
    </TR>
 </TABLE>
 
