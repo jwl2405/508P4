@@ -39,7 +39,7 @@ if (isset($_SESSION['user_ID']))
         if(!empty($queryResult) && password_verify($pwd_plain, $queryResult[1]))
         {
             // Create session variable
-            $_SESSION['user_ID'] = $queryResult['ID'];
+            $_SESSION['user_ID'] = $queryResult['id'];
             header("Location: AccountView.php");
         } else {
             // Password mismatch
