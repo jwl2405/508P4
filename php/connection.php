@@ -22,7 +22,7 @@ session_start();
 echo "Yes";
 echo $_SESSION['user_ID'];
 
-if (!isset($_SESSION['user_ID']))
+if (isset($_SESSION['user_ID']))
 {
 
     echo "Yes12";
@@ -39,7 +39,7 @@ if (!isset($_SESSION['user_ID']))
 
         echo $queryResult[1]; 
 
-        if(!empty($queryResult) && password_verify($pwd_plain, $queryResult[0]))
+        if(!empty($queryResult) && password_verify($pwd_plain, $queryResult[1]))
         {
             // Create session variable
             $_SESSION['user_ID'] = $queryResult['ID'];
