@@ -70,11 +70,11 @@ if (!isset($_SESSION['user_ID']))
         $stmt = $conn->prepare("SELECT id, password FROM user WHERE email=:email");
         $stmt->bindValue(':email', $_POST['email']);
         $stmt->execute();
-        
         $queryResult = $stmt->fetch();
-        
+        $pwd_plain = htmlspecialchars($_POST["password"]);
+
         // Verify password submitted by the user with the hash stored in the database
-        if(!empty($queryResult) && password_verify($_POST["password"], $queryResult['password']))
+        if(!empty($queryResult) && password_verify($pwd_plain, $queryResult['password']))
         {
             // Create session variable
             $_SESSION['user_ID'] = $queryResult['id'];
