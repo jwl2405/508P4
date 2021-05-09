@@ -18,42 +18,41 @@ try {
     echo "Connection failed: " . $e->getMessage();
 }
 
+// Start or resume session variables
 session_start();
 
-
-if (isset($_SESSION['user_ID']))
+// If the user_ID session is not set, then the user has not logged in yet
+if (!isset($_SESSION['user_ID']))
 {
-
     // If the page is receiving the email and password from the login form then verify the login data
-    if (!isset($_POST['email']) && isset($_POST['password']))
+    if (isset($_POST['email']) && isset($_POST['password']))
     {
         $stmt = $conn->prepare("SELECT ID, password FROM user WHERE email=:email");
         $stmt->bindValue(':email', $_POST['email']);
         $stmt->execute();
+        
         $queryResult = $stmt->fetch();
-        $pwd_plain = htmlspecialchars($_POST["password"]);
-
+        
         // Verify password submitted by the user with the hash stored in the database
-        echo $queryResult[1]; 
-
-        if(!empty($queryResult) && password_verify($pwd_plain, $queryResult[1]))
+        if(!empty($queryResult) && password_verify($_POST["password"], $queryResult['password']))
         {
             // Create session variable
             $_SESSION['user_ID'] = $queryResult['ID'];
-            header("Location: AccountView.php");
-            exit();
+            
+            // Redirect to URL 
+            header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
         } else {
             // Password mismatch
-            echo "NotWorking";
-            require('AccountView.php');
+            require('login.php');
             exit();
         }
     }
     else
     {
         // Show login page
-       require('AccountView.php');
+        require('login.php');
         exit();
     }
 }
+
 ?>
