@@ -53,7 +53,7 @@
       
       <TABLE BORDER="5"    WIDTH="50%"   CELLPADDING="4" CELLSPACING="3">
    <TR>
-      <TH COLSPAN="6"><BR><H3><BR>Members</H3>
+      <TH COLSPAN="6"><BR><H3><BR>Employees</H3>
 
       </TH>
    </TR>
