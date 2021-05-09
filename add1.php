@@ -19,7 +19,7 @@ public function addUser()
         $pwd_hashed = password_hash($_POST["password"], PASSWORD_BCRYPT);
         $stmt->bindValue(':password', $pwd_hashed);
         $stmt->execute();
-        header("Location: Home.php");
+        header("Location: AccountView.php");
     }
 }
 
