@@ -187,8 +187,10 @@
         <div class="login">
             <input type="email" placeholder="Username" name="email" id="email"><br>
             <input type="password" placeholder="Password" name="password" id="password"><br>
-            <button type="submit"  href="AccountView.php" > Log in</button>
-            <!-- <input type="submit"  href="php/AccountView.php" value="Login" /> -->
+            <input type="button" onclick="check(this.form)" value="Login" />
+
+            <!--<button type="submit"  href="AccountView.php" > Log in</button>
+            <input type="submit"  href="php/AccountView.php" value="Login" /> -->
         </div>
 
     </form>
