@@ -71,6 +71,7 @@
       <TD>Data 4</TD>
    </TR>
 </TABLE>
+<br>
 
 <fieldset>
     <legend>

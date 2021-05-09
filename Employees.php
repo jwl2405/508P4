@@ -74,7 +74,7 @@
       <TD>Data 6</TD>
    </TR>
 </TABLE>
-
+<br>
 <fieldset>
     <legend>
     Add Members
