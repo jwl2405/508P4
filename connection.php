@@ -53,11 +53,11 @@ if (isset($_SESSION['user_ID']))
     {
         // Show login page
         require('Login.php');
-        <form method="POST">
-        Username: <input name="user" type="text"><br>
-        Password: <input name="pass" type="text"><br><br>
-        <input type="submit" value="submit">
-        </form>
+        //<form method="POST">
+        //Username: <input name="user" type="text"><br>
+        //Password: <input name="pass" type="text"><br><br>
+        //<input type="submit" value="submit">
+        //</form>
         exit();
     }
 }
