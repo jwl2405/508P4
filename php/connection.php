@@ -53,9 +53,23 @@ if (isset($_SESSION['user_ID']))
     {
         // Show login page
         require('Login.php');
+        <form method="POST">
+        Username: <input name="user" type="text"><br>
+        Password: <input name="pass" type="text"><br><br>
+        <input type="submit" value="submit">
+        </form>
+
+}
         exit();
     }
 }
+
+
+session_start();
+setcookie(session_name(), '', 100);
+session_unset();
+session_destroy();
+$_SESSION = array();
 
 
 
