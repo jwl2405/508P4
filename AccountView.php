@@ -72,6 +72,32 @@
    </TR>
 </TABLE>
 
+<fieldset>
+    <legend>
+        Change account specifications
+    </legend>
+
+    <label>
+        Username
+    </label>
+    <br>
+    <input type="text" placeholder="Username" name="username" id="username"><br>
+    <br><label>
+        Email
+    </label>
+    <br>
+    <input type="email" placeholder="Email Address" name="email" id="email"><br>
+    <br>
+    <br><label>
+        Password
+    </label>
+    <br>
+    <input type="password" placeholder="Password" name="password" id="password"><br>
+    <br>
+    <button type="submit" id="addMember"> Create </button>  
+
+</fieldset>
+
 </body>
 
     <body 
