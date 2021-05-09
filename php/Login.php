@@ -185,9 +185,9 @@
     <br>
     <form name="login">
         <div class="login">
-            <input type="text" placeholder="Username" name="userid"><br>
-            <input type="password" placeholder="Password" name="pswrd"><br>
-            <input type="button" onclick="check(this.form)" value="Login" />
+            <input type="text" placeholder="Username" name="email" id="email"><br>
+            <input type="password" placeholder="Password" name="password" id="password"><br>
+            <input type="submit"  href="php/AccountView.php" onclick="check(this.form)" value="Login" />
         </div>
 
     </form>
