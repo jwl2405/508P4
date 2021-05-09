@@ -73,7 +73,6 @@ if (!isset($_SESSION['user_ID']))
         $queryResult = $stmt->fetch();
         $pwd_plain = htmlspecialchars($_POST["password"]);
 
-        echo $queryResult;
         // Verify password submitted by the user with the hash stored in the database
         if(!empty($queryResult) && password_verify($pwd_plain, $queryResult[1]))
         {
