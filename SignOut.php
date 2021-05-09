@@ -19,7 +19,10 @@ public function SignOut()
                 $conn["secure"], $conn["httponly"]
             );
         }
-        
+
+        session_destroy();
+        header("Location: Home.php");
+
     }
 }
 
