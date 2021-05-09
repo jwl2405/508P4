@@ -20,14 +20,14 @@ try {
 
 session_start();
 
-/*
+
 if (isset($_SESSION['user_ID']))
 {
 
     // If the page is receiving the email and password from the login form then verify the login data
     if (!isset($_POST['email']) && isset($_POST['password']))
     {
-        $stmt = $conn->prepare("SELECT ID, password FROM user WHERE email=:email");
+        $stmt = $conn->prepare("SELECT id, password FROM user WHERE email=:email");
         $stmt->bindValue(':email', $_POST['email']);
         $stmt->execute();
         $queryResult = $stmt->fetch();
@@ -55,5 +55,4 @@ if (isset($_SESSION['user_ID']))
         exit();
     }
 }
-*/
 ?>
