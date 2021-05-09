@@ -18,59 +18,8 @@ try {
     echo "Connection failed: " . $e->getMessage();
 }
 
-//$sql = "INSERT INTO Students (name, lastname, email) VALUES ('Test', 'Testing', 'Testing@tesing.com')";
-
-/*
-if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-
-
-*/
-// Start or resume session variables
 session_start();
-
-// if (isset($_POST['RegisterScreen'])) {
-//     $username = $_POST['userid'];
-//     $email = $_POST['emailid'];
-//     $password = $_POST['pswrd'];
-
-//     $sql_u = "SELECT * FROM users WHERE username='$userid'";
-//   	$sql_e = "SELECT * FROM users WHERE email='$emailid'";
-//     $sql_e = "SELECT * FROM users WHERE password='$pswrd'";
-
-//   	$res_u = mysqli_query($conn, $sql_u);
-//   	$res_e = mysqli_query($conn, $sql_e);
-//         $query = "INSERT INTO users (username, email, password) 
-//       	    	  VALUES ('$username', '$email', '$pswrd ','".md5($password)."')";
-//            $results = mysqli_query($db, $query);
-//            echo 'Saved!';
-//            exit();
-// }
-
-//     if(isset($_POST['Login'])){
-//         $email = $_POST['emailid'];
-//         $password = $_POST['password'];
-
-//         $result1 = mysql_query("SELECT username, password FROM Users WHERE username = '".$name."' AND  password = '".$password."'");
-
-//         if(mysql_num_rows($result1) > 0 )
-//         { 
-//             $_SESSION["logged_in"] = true; 
-//             $_SESSION["naam"] = $name; 
-//         }
-//         else
-//         {
-//             echo 'The username or password are incorrect!';
-//         }
-
-//     }
-
-
-// If the user_ID session is not set, then the user has not logged in yet
-
-
+echo "Yes";
 if (!isset($_SESSION['user_ID']))
 {
     // If the page is receiving the email and password from the login form then verify the login data
