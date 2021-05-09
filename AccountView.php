@@ -43,6 +43,10 @@
 
 <body>
 
+    <?php
+        echo $_SESSION['user_ID'];
+    ?>
+
     <div class="topnav">    
         <a class="active" href="AccountView.php">Account View</a>
         <a href="Members.php">Members</a>
