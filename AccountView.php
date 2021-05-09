@@ -48,19 +48,26 @@
         <a href="AboutUs.php">About Us</a>
         <a href="Login.php">Log In</a>
     </div>
-
-    <TABLE  BORDER="5">
+      
+      <TABLE BORDER="5"    WIDTH="50%"   CELLPADDING="4" CELLSPACING="3">
    <TR>
-      <TH COLSPAN="6">
-         <H3><BR>Members</H3>
+      <TH COLSPAN="2"><BR><H3><BR>Members</H3>
+
       </TH>
    </TR>
-      <TH>First Name</TH>
+   <TR>
+   <TH>First Name</TH>
       <TH>Last Name</TH>
       <TH>Username</TH>
       <TH>Email Address</TH>
       <TH>ID</TH>
       <TH>Password</TH>
+   </TR>
+   <TR ALIGN="CENTER">
+      <TD>Data 1</TD>
+      <TD>Data 2</TD>
+   </TR>
+</TABLE>
 
 </body>
 
