@@ -20,8 +20,12 @@ try {
 
 session_start();
 echo "Yes";
+
 if (!isset($_SESSION['user_ID']))
 {
+
+    echo "Yes12";
+
     // If the page is receiving the email and password from the login form then verify the login data
     if (isset($_POST['email']) && isset($_POST['password']))
     {
