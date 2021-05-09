@@ -31,8 +31,8 @@ if (isset($_SESSION['user_ID']))
         $stmt->execute();
         $queryResult = $stmt->fetch();
         $pwd_plain = htmlspecialchars($_POST["password"]);
-        // Verify password submitted by the user with the hash stored in the database
 
+        // Verify password submitted by the user with the hash stored in the database
         echo $queryResult[1]; 
 
         if(!empty($queryResult) && password_verify($pwd_plain, $queryResult[1]))
@@ -45,7 +45,7 @@ if (isset($_SESSION['user_ID']))
         } else {
             // Password mismatch
             echo "NotWorking";
-            require('Login.php');
+            require('AccountView.php');
             exit();
         }
     }
