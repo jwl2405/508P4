@@ -183,7 +183,7 @@
         <div><span>Gymmer</span></div>
     </div>
     <br>
-    <form name="login">
+    <form method ="POST" name="login">
         <div class="login">
             <input type="email" placeholder="Username" name="email" id="email"><br>
             <input type="password" placeholder="Password" name="password" id="password"><br>
