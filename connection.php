@@ -43,14 +43,14 @@ if (!isset($_SESSION['user_ID']))
             header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
         } else {
             // Password mismatch
-            require('login.php');
+            require('Login.php');
             exit();
         }
     }
     else
     {
         // Show login page
-        require('login.php');
+        require('Login.php');
         exit();
     }
 }
