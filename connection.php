@@ -58,20 +58,7 @@ if (isset($_SESSION['user_ID']))
         Password: <input name="pass" type="text"><br><br>
         <input type="submit" value="submit">
         </form>
-
-}
         exit();
     }
 }
-
-
-session_start();
-setcookie(session_name(), '', 100);
-session_unset();
-session_destroy();
-$_SESSION = array();
-
-
-
-
 ?>
