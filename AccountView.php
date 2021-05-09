@@ -44,8 +44,7 @@
 <body>
 
     <?php
-    session_start()
-    echo isset($_SESSION['user_ID']);
+        echo isset($_SESSION['user_ID']);
     ?>
 
     <div class="topnav">    
