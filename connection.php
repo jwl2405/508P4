@@ -51,7 +51,7 @@ if (isset($_SESSION['user_ID']))
     else
     {
         // Show login page
-       require('Login.php');
+       require('AccountView.php');
         exit();
     }
 }
