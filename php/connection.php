@@ -33,7 +33,7 @@ session_start();
 
 
 // If the user_ID session is not set, then the user has not logged in yet
-/*
+
 if (!isset($_SESSION['user_ID']))
 {
     // If the page is receiving the email and password from the login form then verify the login data
@@ -66,8 +66,6 @@ if (!isset($_SESSION['user_ID']))
         exit();
     }
 }
-
-*/
 
 
 
