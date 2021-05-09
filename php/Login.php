@@ -185,22 +185,25 @@
     <br>
     <form name="login">
         <div class="login">
-            <input type="text" placeholder="Username" name="email" id="email"><br>
+            <input type="email" placeholder="Username" name="email" id="email"><br>
             <input type="password" placeholder="Password" name="password" id="password"><br>
-            <input type="submit"  href="php/AccountView.php" onclick="check(this.form)" value="Login" />
+            <buttont type="submit"  href="php/AccountView.php" value="Login"> Login</button>
+            <!-- <input type="submit"  href="php/AccountView.php" value="Login" /> -->
         </div>
 
     </form>
-    <script language="javascript">
+    
+    <!-- <script language="javascript">
     function check(form){
         if(form.userid.value == "lijw" && form.pswrd.value == "Cannons032199"){
 
             window.locate.href = "AccountView.php";
+
         }else{
             alert("Please subscribe to my channel for more coding!")
         }
     }
-    </script>
+    </script> -->
 </body>
 
 <body 
