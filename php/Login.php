@@ -187,7 +187,7 @@
         <div class="login">
             <input type="email" placeholder="Username" name="email" id="email"><br>
             <input type="password" placeholder="Password" name="password" id="password"><br>
-            <buttont type="submit"  href="php/AccountView.php" value="Login"> Login</button>
+            <button type="submit"  href="php/AccountView.php" > Log in</button>
             <!-- <input type="submit"  href="php/AccountView.php" value="Login" /> -->
         </div>
 
