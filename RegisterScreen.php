@@ -206,17 +206,6 @@
             </div>
 
         </form>
-
-        <!-- <table style="width:100%">
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>email</th>
-            <th>Customer_ID</th>
-
-        </tr>
-        </table> -->
-
     </body>
 
     <body 
