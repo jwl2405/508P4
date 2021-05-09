@@ -185,7 +185,7 @@
     </div>
     <br>
 
-    <form method="post" name="login">
+    <form method="post">
         <div class="login">
             <input id="email" type="email" placeholder="Username" name="email">
             <br>
