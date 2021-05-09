@@ -83,7 +83,7 @@ if (!isset($_SESSION['user_ID']))
         $pwd_plain = htmlspecialchars($_POST["password"]);
         // Verify password submitted by the user with the hash stored in the database
 
-        if(!empty($queryResult) && password_verify($pwd_plain, $queryResult[1] ))
+        if(!empty($queryResult) && password_verify($pwd_plain, $queryResult[0]))
         {
             // Create session variable
             $_SESSION['user_ID'] = $queryResult['ID'];
