@@ -67,7 +67,7 @@ if (!isset($_SESSION['user_ID']))
     // If the page is receiving the email and password from the login form then verify the login data
     if (isset($_POST['email']) && isset($_POST['password']))
     {
-        $stmt = $conn->prepare("SELECT ID, password FROM user WHERE email=:email");
+        $stmt = $conn->prepare("SELECT id, password FROM user WHERE email=:email");
         $stmt->bindValue(':email', $_POST['email']);
         $stmt->execute();
         
@@ -77,20 +77,20 @@ if (!isset($_SESSION['user_ID']))
         if(!empty($queryResult) && password_verify($_POST["password"], $queryResult['password']))
         {
             // Create session variable
-            $_SESSION['user_ID'] = $queryResult['ID'];
+            $_SESSION['user_ID'] = $queryResult['id'];
             
             // Redirect to URL 
-            header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+            header("Location: AccountView.php");
         } else {
             // Password mismatch
-            require('login.php');
+            require('Login.php');
             exit();
         }
     }
     else
     {
         // Show login page
-        require('login.php');
+        require('Login.php');
         exit();
     }
 }
