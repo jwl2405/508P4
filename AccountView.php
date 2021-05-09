@@ -49,7 +49,7 @@
         <a href="Login.php">Log In</a>
     </div>
 
-    <TABLE  BORDER="5">
+    <TABLE  BORDER="10">
    <TR>
       <TH COLSPAN="6">
          <H3><BR>Members</H3>
