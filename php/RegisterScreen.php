@@ -200,10 +200,10 @@
         <form name="login">
 
             <div class="login" id="logger">
-                <input type="text" placeholder="Username" name="userid"><br>
-                <input type="email" placeholder="Email Address" name="userid"><br>
-                <input type="password" placeholder="Password" name="pswrd"><br>
-                <input type="button" onclick="check(this.form)" value="Login" />
+                <input type="text" placeholder="Username" name="username" id="username"><br>
+                <input type="email" placeholder="Email Address" name="email" id="email"><br>
+                <input type="password" placeholder="Password" name="password" id="password"><br>
+                <input type="submit" id="addUser" />
             </div>
 
         </form>
@@ -225,3 +225,5 @@
 </body>
 
 </html>
+
+<script src="add.js"></script>

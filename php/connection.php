@@ -34,20 +34,20 @@ session_start();
 if (isset($_POST['RegisterScreen'])) {
     $username = $_POST['userid'];
     $email = $_POST['emailid'];
+    $password = $_POST['pswrd'];
 
     $sql_u = "SELECT * FROM users WHERE username='$userid'";
   	$sql_e = "SELECT * FROM users WHERE email='$emailid'";
+    $sql_e = "SELECT * FROM users WHERE password='$pswrd'";
+
   	$res_u = mysqli_query($conn, $sql_u);
   	$res_e = mysqli_query($conn, $sql_e);
-      if (mysqli_num_rows($res_u) < 0) {
         $query = "INSERT INTO users (username, email, password) 
-      	    	  VALUES ('$username', '$email', '".md5($password)."')";
+      	    	  VALUES ('$username', '$email', '$pswrd ','".md5($password)."')";
            $results = mysqli_query($db, $query);
            echo 'Saved!';
            exit();
-      }else
-      echo 'An account is already associated with the credentials you have provided';
-    }
+}
 
     if(isset($_POST['Login'])){
         $email = $_POST['emailid'];
@@ -67,7 +67,7 @@ if (isset($_POST['RegisterScreen'])) {
 
     }
 
-    
+
 // If the user_ID session is not set, then the user has not logged in yet
 
 /*
