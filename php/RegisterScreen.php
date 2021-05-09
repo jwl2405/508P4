@@ -197,13 +197,13 @@
         </div>
         <br>
 
-        <form name="login">
+        <form  method="POST" name="login">
 
             <div class="login" id="logger">
                 <input type="text" placeholder="Username" name="username" id="username"><br>
                 <input type="email" placeholder="Email Address" name="email" id="email"><br>
                 <input type="password" placeholder="Password" name="password" id="password"><br>
-                <input type="submit" id="addUser" />
+                <button type="submit" id="addUser"> Create </button>  
             </div>
 
         </form>
