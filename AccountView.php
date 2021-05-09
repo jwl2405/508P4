@@ -47,6 +47,9 @@
         <a class="active" href="AccountView.php">Account View</a>
         <a href="Members.php">Members</a>
         <a href="Employees.php">Employees</a>
+        <button type="submit" id="SignOut"> Sign out </button>  
+
+
     </div>
       
       <TABLE BORDER="5"    WIDTH="50%"   CELLPADDING="4" CELLSPACING="3">
@@ -75,4 +78,7 @@
         oncontextmenu="return false">
     </body>
 
+
 </html>
+
+<script src="SignOut.js"></script>
