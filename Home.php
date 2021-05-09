@@ -242,7 +242,4 @@
     </fieldset>
 </body>
 
-<body oncontextmenu="return false">
-</body>
-
 </html>

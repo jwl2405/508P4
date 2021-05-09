@@ -104,11 +104,6 @@
 
 </body>
 
-    <body 
-        oncontextmenu="return false">
-    </body>
-
-
 </html>
 
 <script src="SignOut.js"></script>
