@@ -20,6 +20,7 @@ try {
 
 session_start();
 echo "Yes";
+echo $_SESSION['user_ID'];
 
 if (!isset($_SESSION['user_ID']))
 {
