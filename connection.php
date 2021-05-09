@@ -40,7 +40,7 @@ if (isset($_SESSION['user_ID']))
         {
             // Create session variable
             $_SESSION['user_ID'] = $queryResult['ID'];
-            require('AccountView.php');
+            header("Location: AccountView.php");
             exit();
         } else {
             // Password mismatch

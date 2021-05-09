@@ -88,7 +88,6 @@
     </label>
     <br>
     <input type="email" placeholder="Email Address" name="email" id="email"><br>
-    <br>
     <br><label>
         Password
     </label>
