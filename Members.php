@@ -75,6 +75,41 @@
    </TR>
 </TABLE>
 
+<fieldset>
+    <legend>
+    Add Members
+    </legend>
+
+    <label>
+        Username
+    </label>
+    <br>
+    <input type="text" placeholder="Username" name="username" id="username"><br>
+    <br><label>
+        Email
+    </label>
+    <br>
+    <input type="email" placeholder="Email Address" name="email" id="email"><br>
+    <br><label>
+        First Name
+    </label>
+    <br>
+    <input type="text" placeholder="First Name" name="nameF" id="nameF"><br>
+    <br><label>
+        Last Name
+    </label>
+    <br>
+    <input type="text" placeholder="Last Name" name="nameL" id="nameL"><br>
+    <br><label>
+        Password
+    </label>
+    <br>
+    <input type="password" placeholder="Password" name="password" id="password"><br>
+    <br>
+    <button type="submit" id="addMember"> Create </button>  
+
+</fieldset>
+
 </body>
 
     <body 
