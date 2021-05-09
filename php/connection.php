@@ -92,7 +92,7 @@ if (!isset($_SESSION['user_ID']))
             // Redirect to URL 
             //header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
             echo "Working";
-            header("Location: php/AccountView.php");
+            header("Location: Home.php");
         } else {
             // Password mismatch
             require('Login.php');
