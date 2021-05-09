@@ -44,15 +44,17 @@ if (!isset($_SESSION['user_ID']))
         $stmt->execute();
         
         $queryResult = $stmt->fetch();
-        
+        $pwd_plain = htmlspecialchars($POST["password"]);
         // Verify password submitted by the user with the hash stored in the database
+
         if(!empty($queryResult) && password_verify($_POST["password"], $queryResult['password']))
         {
             // Create session variable
             $_SESSION['user_ID'] = $queryResult['ID'];
             
             // Redirect to URL 
-            header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+            //header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+            header("Location: php/AccountView.php");
         } else {
             // Password mismatch
             require('Home.php');
