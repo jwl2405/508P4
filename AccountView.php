@@ -84,18 +84,22 @@
         Username
     </label>
     <br>
-    <input type="text" placeholder="Username" name="username" id="username"><br>
+    <input type="radio" placeholder="Username" name="username" id="username" value="username"><br>
     <br><label>
         Email
     </label>
     <br>
-    <input type="email" placeholder="Email Address" name="email" id="email"><br>
+    <input type="radio" placeholder="email" name="email" id="email" value="email"><br>
     <br><label>
         Password
     </label>
     <br>
-    <input type="password" placeholder="Password" name="password" id="password"><br>
-    <br>
+    <input type="radio" placeholder="password" name="password" id="password" value="password"><br>
+    <br><label>
+        Change username/password/email
+    </label>
+    <input type="text" placeholder="change" name="change" id="change"><br>
+
     <button type="submit" id="addMember"> Create </button>  
 
 </fieldset>
