@@ -8,7 +8,7 @@ class user
     {
         global $conn;
         
-        $sqlQuery = "SELECT id AS 'ID', email AS 'email', password AS 'password', username AS 'username'
+        $sqlQuery = "SELECT id AS 'id', email AS 'email', password AS 'password', username AS 'username'
         FROM user";
         
         $stmt = $conn->prepare($sqlQuery);
@@ -21,7 +21,7 @@ class user
         while ($sqlRow = $stmt->fetch()) {
             $dataRow = array();
             
-            $dataRow[] = $sqlRow['ID'];
+            $dataRow[] = $sqlRow['id'];
             $dataRow[] = $sqlRow['email'];
             $dataRow[] = $sqlRow['password'];
             $dataRow[] = $sqlRow['username'];
