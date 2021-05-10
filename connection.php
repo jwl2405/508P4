@@ -35,7 +35,6 @@ if (!isset($_SESSION['user_ID']))
         // Verify password submitted by the user with the hash stored in the database
         if(!empty($queryResult) && password_verify($pwd_plain, $queryResult[1]))
         {
-            echo "HELLO";
             // Create session variable
             $_SESSION['user_ID'] = $queryResult['id'];
             
