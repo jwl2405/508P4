@@ -6,15 +6,14 @@ class User{
         global $conn;
             
         $sqlQuery = "INSERT INTO member
-                    (First_name, Last_name, email, username, password, ID) 
+                    (First_name, Last_name, email, username, password) 
                     VALUES 
-                    (:nameF, :nameL, :email, :username, :password, ID)";
-
+                    (:First_name, :Last_name, :email, :username, :password)";
 
         $stmt = $conn->prepare($sqlQuery);
     
-        $stmt->bindValue(':nameF', $_POST["nameF"]);
-        $stmt->bindValue(':nameL', $_POST["nameL"]);
+        $stmt->bindValue(':First_name', $_POST["First_name"]);
+        $stmt->bindValue(':Last_name', $_POST["Last_name"]);
         $stmt->bindValue(':email', $_POST["email"]);
         $stmt->bindValue(':username', $_POST["username"]);
         $pwd_hashed = password_hash($_POST["password"], PASSWORD_BCRYPT);

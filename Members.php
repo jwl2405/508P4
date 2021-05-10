@@ -99,12 +99,12 @@
         First Name
     </label>
     <br>
-    <input type="text" placeholder="First Name" name="nameF" id="nameF"><br>
+    <input type="text" placeholder="First Name" name="First_name" id="First_name"><br>
     <br><label>
         Last Name
     </label>
     <br>
-    <input type="text" placeholder="Last Name" name="nameL" id="nameL"><br>
+    <input type="text" placeholder="Last Name" name="Last_name" id="Last_name"><br>
     <br><label>
         Password
     </label>
