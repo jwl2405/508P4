@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css"/>
 
 <!-- My JS libraries -->
-<script src="AccountImport.js"></script>
+<script src="MemberImport.js"></script>
 </head>
 
 <?php require_once('connection.php'); ?>

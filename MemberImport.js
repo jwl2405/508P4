@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	$('#table-member').DataTable({
+	$('#table-member-member').DataTable({
 		"dom": 'Blfrtip',
 		"ordering":false,
 		"bLengthChange": false,

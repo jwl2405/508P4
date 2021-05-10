@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css"/>
 
 <!-- My JS libraries -->
-<script src="MemverImport.js"></script>
+<script src="MemberImport.js"></script>
     
     <style>
         input {
@@ -117,3 +117,5 @@
 
 </body>
 </html>
+
+<script src="Addmember.js"></script>
