@@ -47,7 +47,7 @@
         <a class="active" href="AccountView.php">Account View</a>
         <a href="Members.php">Members</a>
         <a href="Employees.php">Employees</a>
-        <button type="submit" id="SignOut"> <a href="Home.php">Sign out </a></button>  
+        <button style="background-color: #333;" type="submit" id="SignOut"> <a href="Home.php">Sign out </a></button>  
 
     </div>
       
