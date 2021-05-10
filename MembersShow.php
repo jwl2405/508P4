@@ -9,8 +9,7 @@ class user
         global $conn;
         
         $sqlQuery = "SELECT id AS 'ID', email AS 'Email', password AS 'Password', username AS 'Username'
-        FROM user WHERE id = 3
-        }";
+        FROM user";
         
         $stmt = $conn->prepare($sqlQuery);
         $stmt->execute();
@@ -26,7 +25,7 @@ class user
             $dataRow[] = $sqlRow['Email'];
             $dataRow[] = $sqlRow['Password'];
             $dataRow[] = $sqlRow['Username'];
-                        
+
             $dataTable[] = $dataRow;
         }
         
