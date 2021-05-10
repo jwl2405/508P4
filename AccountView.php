@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css"/>
 
 <!-- My JS libraries -->
-<script src="AddMembers.js"></script>
+<script src="AccountImport.js"></script>
 
     <style>
         input {
