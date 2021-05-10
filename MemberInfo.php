@@ -12,7 +12,7 @@
 <div class="container-fluid mt-3 mb-3">
 	<h4>Employees</h4>
 	<div class="table-responsive">
-		<table id="table-employee" class="table table-bordered table-striped">
+		<table id="Table-member" class="table table-bordered table-striped">
 			<thead>
 				<tr>
 					<th>ID</th>
