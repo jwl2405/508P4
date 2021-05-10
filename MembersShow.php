@@ -7,9 +7,9 @@ class user
     public function listEmployees()
     {
         global $conn;
-        
+        $num = $_SESSION['user_ID'];
         $sqlQuery = "SELECT id AS 'id', email AS 'email', password AS 'password', username AS 'username'
-        FROM user";
+        FROM user WHERE id ='$num'";
         
         $stmt = $conn->prepare($sqlQuery);
         $stmt->execute();
