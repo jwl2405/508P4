@@ -1,13 +1,13 @@
 $(document).ready(function(){
 	
-	$('#Table-member').DataTable({
+	$('#table-member').DataTable({
 		"dom": 'Blfrtip',
 		"ordering":false,
 		"bLengthChange": false,
 		"searching": false,
 		"paging": false,
 		"ajax":{
-			url:"MemberInfo.php",
+			url:"MembersShow.php",
 			type:"POST",
 			data:{
 					action:'listEmployees'
