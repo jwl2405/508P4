@@ -2,29 +2,16 @@
 <?php
 require_once ('connection.php');
 
-class User
+class user
 {
-    public function MembersShow()
+    public function listEmployees()
     {
         global $conn;
         
-        $sqlQuery = "SELECT h.First_name as 'First name', h.last_name as 'Last name', h.email as 'Email', h.username as 'Username', h.password as 'password'
-        FROM members h join user u;
-
-/*
-        if (! empty($_POST["search"]["value"]))
-         {
-             $sqlQuery .= 'WHERE ( name LIKE "%' . $_POST["search"]["value"] . '%" OR type LIKE "%' . $_POST["search"]["value"] . '%" or rating LIKE "%' . $_POST["search"]["value"] . '%") ';
-         }
-*/
-/*
-if (! empty($_POST["order"])) {
-    $sqlQuery .= 'ORDER BY ' . ($_POST['order']['0']['column'] + 1) . ' ' . $_POST['order']['0']['dir'] . ' ';
-} else {
-    $sqlQuery .= 'ORDER BY r.rest_name ASC ';
-}
-*/
-    
+        $sqlQuery = "SELECT id AS 'ID', email AS 'Email', password AS 'Password', username AS 'Username'
+        FROM user WHERE id = 3
+        }";
+        
         $stmt = $conn->prepare($sqlQuery);
         $stmt->execute();
         
@@ -34,12 +21,12 @@ if (! empty($_POST["order"])) {
         
         while ($sqlRow = $stmt->fetch()) {
             $dataRow = array();
-            $dataRow[] = $sqlRow['name'];
-            $dataRow[] = $sqlRow['type'];
-            $dataRow[] = $sqlRow['location'];
-            $dataRow[] = $sqlRow['phone'];
-            $dataRow[] = $sqlRow['rating'];
-            $dataRow[] = $sqlRow['posted by'];
+            
+            $dataRow[] = $sqlRow['ID'];
+            $dataRow[] = $sqlRow['Email'];
+            $dataRow[] = $sqlRow['Password'];
+            $dataRow[] = $sqlRow['Username'];
+                        
             $dataTable[] = $dataRow;
         }
         
@@ -53,8 +40,7 @@ if (! empty($_POST["order"])) {
     }
 }
 
-$User = new User();
-$User-> listGyms();
-
+$employee = new user();
+    $employee->listEmployees();
 
 ?>

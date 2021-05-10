@@ -74,33 +74,22 @@
 </TABLE>
 <br>
 
-<fieldset>
-    <legend>
-        Change account specifications
-    </legend>
-
-    <label>
-        Username
-    </label>
-    <br>
-    <input type="text" placeholder="Username" name="username" id="username"><br>
-    <br><label>
-        Email
-    </label>
-    <br>
-    <input type="email" placeholder="Email Address" name="email" id="email"><br>
-    <br><label>
-        Password
-    </label>
-    <br>
-    <input type="password" placeholder="Password" name="password" id="password"><br>
-    <br>
-    <button type="submit" id="addMember"> Create </button>  
-
-</fieldset>
+<div class="table-responsive">
+		<table id="table-employee" class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Email</th>
+					<th>Password</th>
+					<th>Username</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
 
 </body>
 
 </html>
 
-<script src="SignOut.js"></script>
+<script src="AddMembers.js"></script>
+
