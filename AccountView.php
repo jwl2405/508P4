@@ -52,20 +52,6 @@
 
 
     </div>
-      
-    <div class="table-responsive">
-		<table id="table-employee" class="table table-bordered table-striped">
-			<thead>
-				<tr>
-					<th>ID</th>
-					<th>Email</th>
-					<th>Password</th>
-					<th>Username</th>
-				</tr>
-			</thead>
-		</table>
-	</div>
-<br>
 
 <fieldset>
     <legend>
