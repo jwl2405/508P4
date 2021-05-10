@@ -85,9 +85,14 @@
         <option value="Email">Email</option>
         <option value="Password">Password</option>
     </select>
+    <br>   
+    <Label>
+        Change username/email/password
+    </label>
     <br>
-
-
+    <input type="text" placeholder="changedText" name="changedText" id="changedText"><br>
+    <br>
+    <br>
     <button type="submit" id="addMember"> Create </button>  
 
 </fieldset>
