@@ -60,8 +60,6 @@
         <a href="Members.php">Members</a>
         <a href="Employees.php">Employees</a>
         <button type="submit" id="SignOut"> <a href="Home.php">Sign out </a></button>  
-
-
     </div>
 
     <div class="table-responsive">
