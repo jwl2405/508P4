@@ -1,5 +1,5 @@
 <html>
-<?php require_once('connection.php'); ?>
+//<?php require_once('connection.php'); ?>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -53,28 +53,7 @@
 
     </div>
       
-      <TABLE BORDER="5"    WIDTH="50%"   CELLPADDING="4" CELLSPACING="3">
-   <TR>
-      <TH COLSPAN="4"><BR><H3><BR>Account Information</H3>
-
-      </TH>
-   </TR>
-   <TR>
-      <TH>Username</TH>
-      <TH>Email Address</TH>
-      <TH>ID</TH>
-      <TH>Password</TH>
-   </TR>
-   <TR ALIGN="CENTER">
-       <TD>Data 1</TD>
-      <TD>Data 2</TD>
-      <TD>Data 3</TD>
-      <TD>Data 4</TD>
-   </TR>
-</TABLE>
-<br>
-
-<div class="table-responsive">
+    <div class="table-responsive">
 		<table id="table-employee" class="table table-bordered table-striped">
 			<thead>
 				<tr>
@@ -86,10 +65,35 @@
 			</thead>
 		</table>
 	</div>
+<br>
+
+<fieldset>
+    <legend>
+        Change account specifications
+    </legend>
+
+    <label>
+        Username
+    </label>
+    <br>
+    <input type="text" placeholder="Username" name="username" id="username"><br>
+    <br><label>
+        Email
+    </label>
+    <br>
+    <input type="email" placeholder="Email Address" name="email" id="email"><br>
+    <br><label>
+        Password
+    </label>
+    <br>
+    <input type="password" placeholder="Password" name="password" id="password"><br>
+    <br>
+    <button type="submit" id="addMember"> Create </button>  
+
+</fieldset>
 
 </body>
 
 </html>
 
 <script src="AddMembers.js"></script>
-
