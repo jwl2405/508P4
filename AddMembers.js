@@ -7,7 +7,7 @@ $(document).ready(function(){
 		"searching": false,
 		"paging": false,
 		"ajax":{
-			url:"MembersShow.php",
+			url:"MemberInfo.php",
 			type:"POST",
 			data:{
 					action:'listEmployees'
