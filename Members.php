@@ -50,30 +50,22 @@
         <button type="submit" id="SignOut"> <a href="Home.php">Sign out </a></button>  
 
     </div>
-      
-      <TABLE BORDER="5"    WIDTH="50%"   CELLPADDING="4" CELLSPACING="3">
-   <TR>
-      <TH COLSPAN="6"><BR><H3><BR>Employees</H3>
 
-      </TH>
-   </TR>
-   <TR>
-   <TH>First Name</TH>
-      <TH>Last Name</TH>
-      <TH>Username</TH>
-      <TH>Email Address</TH>
-      <TH>ID</TH>
-      <TH>Password</TH>
-   </TR>
-   <TR ALIGN="CENTER">
-       <TD>Data 1</TD>
-      <TD>Data 2</TD>
-      <TD>Data 3</TD>
-      <TD>Data 4</TD>
-      <TD>Data 5</TD>
-      <TD>Data 6</TD>
-   </TR>
-</TABLE>
+    <div class="table-responsive-member">
+		<table id="table-member-member" name="table-member-member" class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<th>first_name</th>
+                    <th>last_name</th>
+					<th>id</th>
+					<th>email</th>
+					<th>password</th>
+					<th>username</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+    
 <br>
 <fieldset>
     <legend>
