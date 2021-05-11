@@ -5,7 +5,7 @@ class User{
     public function AddMember(){
         global $conn;
             
-        $sqlQuery = "INSERT INTO member
+        $sqlQuery = "UPDATE INTO member
                     (First_name, Last_name, email, username, password) 
                     VALUES 
                     (:First_name, :Last_name, :email, :username, :password)";
