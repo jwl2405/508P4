@@ -17,8 +17,9 @@ try {
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
 }
+
 session_start();
-session_destroy();
+
 
 // If the user_ID session is not set, then the user has not logged in yet
 if (!isset($_SESSION['user_ID']))
